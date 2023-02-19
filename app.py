@@ -21,6 +21,11 @@ def test():
     return '<h1>Welcome' 
 
 
+
+@app.route('/waga')
+def test1():
+    return '<h1>Welcome' 
+
 @app.route('/item', methods=['POST'])
 def create_item():
     data = request.get_json()
